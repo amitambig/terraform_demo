@@ -22,17 +22,17 @@ jobs:
             - name: Terraform Init
               id: init
               run: terraform init
-              working-directory: ./Terraform_demo/root
+              working-directory: ./root
             - name: Terraform Validate
               id: validate
               run: terraform validate
-              working-directory: ./Terraform_demo/root
+              working-directory: ./root
             - name: Terraform Plan
               id: plan
               run: terraform plan
-              working-directory: ./Terraform_demo/root
+              working-directory: ./root
             - name: Terraform Apply
               id: apply
               run: terraform apply --auto-approve
-              working-directory: ./Terraform_demo/root
+              working-directory: ./root
 
